@@ -4,8 +4,6 @@
 """Tests for `myproject` package."""
 
 import pytest
-import mathlib
-
 
 
 @pytest.fixture
