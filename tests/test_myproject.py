@@ -4,6 +4,7 @@
 """Tests for `myproject` package."""
 
 import pytest
+from myproject.mathlib import *
 
 
 @pytest.fixture
@@ -23,5 +24,5 @@ def test_content(response):
 
 
 def test_calc_total():
-	total = mathlib.calc_total(4,5)
+	total = calc_total(4,5)
 	assert(total,9)
