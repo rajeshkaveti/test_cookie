@@ -4,6 +4,7 @@
 """Tests for `myproject` package."""
 
 import pytest
+import mathlib
 
 
 
@@ -21,3 +22,8 @@ def test_content(response):
     """Sample pytest test function with the pytest fixture as an argument."""
     # from bs4 import BeautifulSoup
     # assert 'GitHub' in BeautifulSoup(response.content).title.string
+
+
+def test_calc_total():
+	total = mathlib.calc_total(4,5)
+	assert(total,9)
